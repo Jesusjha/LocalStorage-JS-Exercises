@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Assembler SchoolLocal Storage</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script defer src="./06-exercise.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul class="list">
+        <li class="list-item">
+          <a href="../../index.html">Home</a>
+        </li>
+      </ul>
+    </header>
+    <div>
+      <h1>Instructions</h1>
+      <p>
+        Use the <code>JSON.parse()</code> method to read the key
+        <code>ex-06-data</code> from local storage and then create an
+        <code>li</code> element for each element in the data array.
+      </p>
+      <p>
+        The li elements should be added as child elements of the
+        <code>.ex-list</code> ul element.
+      </p>
+      <p>
+        The <code>li</code> element should have the text content of the
+        <code>name</code> property in each object.
+      </p>
+      <p>The <code>ex-06-data</code> array is an array of objects:</p>
+      <p>
+        <code>
+          [{ name: "Barcelona" }, { name: "Madrid" }, { name: "Sevilla" }]
+        </code>
+      </p>
+      <p>
+        The <code>JSON.parse(string)</code> method can be used to convert JSON
+        to an object.
+      </p>
+    </div>
+    <div>
+      <hr />
+      <div class="ex-wrapper">
+        <div class="ex-wrapper">
+          <ul class="ex-list"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
