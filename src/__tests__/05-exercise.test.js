@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import exercise05 from "../05-exercise/05-exercise";
 
 describe("05-exercise", () => {
