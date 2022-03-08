@@ -1,20 +1,35 @@
 {
   "name": "js-localstorage-exercises",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "version": "1.0.0",
   "description": "js-localstorage-exercises",
   "author": "Dani Lucaci <dani@assemblerschool.com>",
   "scripts": {
     "test": "jest --watchAll",
     "start": "parcel index.html --open",
-    "build": "parcel build index.html",
-    "deploy": "codesandbox ./"
+    "build": "parcel build index.html"
   },
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@types/jest": "^27.4.1",
     "babel-jest": "^27.5.1",
     "jest": "^27.5.1",
-    "parcel-bundler": "^1.3.1"
+    "jest-transform-stub": "^2.0.0",
+    "parcel": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "jest": {
+    "transform": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
