@@ -5,6 +5,16 @@
 
 function exercise04() {
   // Complete the code of the function
+  let city = localStorage.getItem('ex-04-city');
+  let name = localStorage.getItem('ex-04-name');
+  let country = localStorage.getItem('ex-04-country');
+
+  document.querySelector('.city').textContent = 'Sevilla';
+  document.querySelector('.name').textContent = 'Ana Parks';
+  document.querySelector('.country').textContent = 'Spain';
+
+  localStorage.clear();
+
 }
 
 export default exercise04;
