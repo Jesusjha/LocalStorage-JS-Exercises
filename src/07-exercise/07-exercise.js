@@ -11,6 +11,8 @@ function exercise07() {
   ];
 
   // Complete the code of the function
+  const identity = JSON.stringify (users);
+  localStorage.setItem('ex-07-users', identity)
 }
 
 export default exercise07;
